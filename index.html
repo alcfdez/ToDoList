@@ -9,31 +9,20 @@
 </head>
 <body>
     <header>
-        <h1>Simple To Do List</h1>
+		<h1>Simple To Do List</h1>
         <p>Edit To Do</p>
-        <form id="toDo">
-            <input type="text" id="text" placeholder="Write your To Do"/>
-            <input type="submit" id="btnAdd" value="ADD"/>
-        </form>
-    </header>
-    <main>
-        <section class="listToDo">
-            <h2>To Do List</h2>
-                <div class="list">
-                    <div class="container">
-                        <input type="text" class="textToDo" value="mi list" readonly/>
-                    </div>
-                    <div class="actions">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
-
-                    </div>
-                </div>
-
-
-        </section>
-
-    </main>
-    <script src="main.js"></script>
+		<form id="new-task-form">
+			<input type="text" name="new-task-input" id="new-task-input" placeholder="Write your To Do Task">
+			<input type="submit" id="new-task-submit" value="Add">
+		</form>
+	</header>
+	<main>
+		<section class="task-list">
+			<h2>To Do List</h2>
+			<div id="tasks">
+			</div>
+		</section>
+	</main>
+	<script src="./app.js"></script>
 </body>
 </html>
